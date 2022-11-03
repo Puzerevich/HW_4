@@ -1,0 +1,34 @@
+public class Main {
+    public static void main(String[] args) {
+
+        // DOG
+        Dog dog1 = new Dog("Бобік");
+        Dog dog2 = new Dog("Жужік");
+
+        System.out.println(dog1.run(200));
+        System.out.println(dog1.run(600));
+        System.out.println(dog2.swim(3));
+        System.out.println(dog2.swim(300));
+        System.out.println("");
+
+
+        // CAT
+        Cat cat1 = new Cat("Васька");
+        cat1.setRunDist(300);
+        System.out.println(cat1.run());
+     //   System.out.println(cat1.run(200));
+
+        System.out.println("\n");
+
+        Cat cat2 = new Cat("Томас", 300);
+        System.out.println(cat2.run());
+        System.out.println(cat2.run(150));
+        System.out.println(cat2.swim());
+        cat2.setSwimDist(12);
+        System.out.println(cat2.swim());
+        System.out.println(cat2.swim(5));
+
+        System.out.println("\nВсього тварин створено: "+Animal.animalCount);
+
+    }
+}
