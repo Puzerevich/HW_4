@@ -1,0 +1,41 @@
+public class Dog extends Animal{
+
+    public Dog(String name) {
+        super(name);
+        animalCount++;
+    }
+
+    public Dog(String name, int distance) {
+        super(name, distance);
+        animalCount++;
+    }
+
+    public String run(){
+        if(getRunDist()<=500){
+            return getName()+" пробіг "+getRunDist()+" м.";
+        }
+        else{
+            return getName()+" не зміг пробігти "+getRunDist()+"м. Собаки можуть пробігти не більше 500 м.";
+        }
+    }
+    public String run(int dist){
+        setRunDist(dist);
+        return run();
+    }
+
+    public String swim(){
+        if(getSwimDist()<=10){
+            return getName()+" проплив "+getSwimDist()+" м.";
+        }
+        else{
+            return getName()+" не зміг проплити "+getSwimDist()+"м. Собаки можуть проплити не більше 10 м.";
+        }
+    }
+
+    public String swim(int dist){
+        setSwimDist(dist);
+        return swim();
+    }
+
+
+}
