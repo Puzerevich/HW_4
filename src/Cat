@@ -1,0 +1,50 @@
+public class Cat extends Animal{
+    private int runDist;
+    private int swimDist;
+
+    public Cat(String name) {
+        super(name);
+        animalCount++;
+    }
+
+    public Cat(String name, int runDist) {
+        super(name);
+        this.runDist = runDist;
+        animalCount++;
+    }
+
+    public int getRunDist() {
+        return runDist;
+    }
+    public void setRunDist(int runDist) {
+        this.runDist = runDist;
+    }
+    public int getSwimDist() {
+        return swimDist;
+    }
+    public void setSwimDist(int swimDist1) {
+        this.swimDist = swimDist1;
+    }
+
+    // RUN
+    public String run(){
+        if(getRunDist()<=200){
+            return getName()+" пробіг "+getRunDist()+" м.";
+        }
+        else{
+            return getName()+" не зміг пробігти "+getRunDist()+"м. Коти можуть пробігти не більше 200 м.";
+        }
+    }
+    public String run(int dist){
+      setRunDist(dist);
+      return run();
+    }
+
+   // SWIM
+   public String swim(){
+       return "Коти не вміють плавати!";
+   }
+    public String swim(int dist){
+        return "Коти не вміють плавати!";
+    }
+}
