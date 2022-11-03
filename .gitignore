@@ -15,7 +15,6 @@ dist/
 # Log files
 *.log
 
-
 # Maven
 target/
 
@@ -25,6 +24,7 @@ out/
 
 # Git
 .git
+*.iml
 
 # Unit test reports
 TEST*.xml
