@@ -1,6 +1,6 @@
-<b>JavaPro_21_10_2022
-Home Work_4
-Тема: Успадкування в Java
+<b>JavaPro_21_10_2022</br>
+Home Work_4</br>
+Тема: Успадкування в Java</br>
 </br>
 1. Створити порожній проект в IntelliJ 
 
